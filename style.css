@@ -6,11 +6,6 @@ src:url("https://use.typekit.net/af/05eeea/00000000000000007735a9eb/30/l?primer=
 font-display:auto;font-style:normal;font-weight:400;
 }
 
-.fa {
-    width: 100px;
-    height: 100px
-}
-
 
 * {
     box-sizing: border-box;
@@ -18,35 +13,73 @@ font-display:auto;font-style:normal;font-weight:400;
 }
 
 .container {
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 .header {
     background-color: red;
-    height: 20vh;
+    height: 65vh;
     display: flex;
     /* width: 100vw; */
+    background-image: url('./img/meadow_with_bears.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .header-banner-wrapper {
     width: 70vw;
     height: 100%;
-    background-color:blue;
+    /* background-color:blue; */
+
 }
 
+/* @media only screen and (max-width: 700px) {
+    .header-banner-wrapper-title {
+        font-size: 15rem;
+    }
+} */
 .header-banner-wrapper-title {
-    font-size: 4rem;
+    margin-top: 1rem;
+    font-size: 5rem;
+    
+    text-shadow: 4px 2px black;
     font-family: "jumble",sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.header-banner-wrapper-text {
+    /* margin-top: .2rem; */
+    font-size: 1.6rem;
+    
+    text-shadow: 1px 1px black;
+    font-family: "jumble",sans-serif;
+    /* border: 1px solid red; */
+    color: white;
 }
 
 .header-banner-wrapper-social-container {
     display:flex;
+    justify-content: center;
+    opacity: 1;
+    
+}
+
+
+svg {
+    fill: white;
 }
 
 .header-banner-wrapper-social-img {
-    height: 3vh;
-    width: 3px;
+    height: 100%;
+    width: 3vw;
+    /* border: 1px solid white; */
+    border-radius: 2px;
+    margin-left: .3vw;
+    margin-right: .3vw;
+    opacity: 1;
     /* background-color: purple; */
     @font-face {
         font-family: 'Open Sans';
@@ -56,18 +89,30 @@ font-display:auto;font-style:normal;font-weight:400;
       }
 }
 
+.header-banner-wrapper-social-img:hover {
+    opacity: .5;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+
 .header-banner-wrapper-social-text {
     font-size: 1.5rem;
 }
 
 .header-left {
     width: 15vw;
-    background-color: yellow;
+    /* background-image: url('img/brown_bear.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: yellow; */
 }
 
 .header-right {
     width: 15vw;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 .main {
@@ -78,7 +123,7 @@ font-display:auto;font-style:normal;font-weight:400;
 
 .main-item-container {
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     justify-content: space-around;
     flex-direction: row;
     margin-top:3rem;
@@ -87,12 +132,13 @@ font-display:auto;font-style:normal;font-weight:400;
 
 
 .main-item {
-    width: 15vw;
-    height: 15vh;
-    background-color: orchid;
-    border: 1px solid orange;
+    width: 22vw;
+    height: 30vh;
+    /* background-color: orchid; */
+    /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
+    
 }
 
 @media only screen and (max-width: 700px) {
@@ -102,16 +148,62 @@ font-display:auto;font-style:normal;font-weight:400;
   }
   
 .main-item-img {
-    width: 10vw;
-    height: 10vh;
+    background-image: url('img/moonchild_paci.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 2%;
+    /* border: 1px solid green; */
 }
 
 .main-item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* margin-top: 8%; */
+    /* align-self: center; */
+    
+    /* border: 1px solid orchid; */
+}
+
+button.main-item-btn {
+    width: 45%;
+    align-self: center;
+    /* border: 1px solid rgb(204, 204, 204); */
+    border: 1px solid #ccc;
+
+    margin-top: .6rem;
+    background-color: transparent;
+    box-shadow: 0;
+    border-radius: 3px;
+    opacity: 1;
 
 }
 
-.main-item-btn {
 
+button.main-item-btn:hover {
+    background-color: grey;
+    /* box-shadow: 1px 1px grey; */
+    opacity: .4;
+
+    transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -webkit-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+
+    /* transition: box-shadow .2s ease-out;
+    -moz-transition: box-shadow .2s ease-out;
+    -webkit-transition: box-shadow .2s ease-out;
+    -o-transition: box-shadow .2s ease-out; */
+
+    
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
 }
 
 
